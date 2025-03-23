@@ -1,38 +1,39 @@
 const RegistroFormulario = () => {
     return (
-        <div className="bg-white p-10 rounded-2xl shadow-2xl w-96">
-            <h1 className="text-xl font-bold text-center text-gray-800 mb-4">Formulario básico tarea de UTN</h1>
-            <form className="flex flex-col items-center">
-                <div className="mb-4 w-full flex flex-col">
-                    <label className="text-sm font-medium text-gray-700">Nombre</label>
-                    <input type="text" className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+        <div style={{ border: '1px solid black', padding: '20px', borderRadius: '10px', width: '55%', margin: 'auto' }}>
+            <h1>Formulario básico  UTN</h1>
+            <form>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                        <label htmlFor="nombre" style={{ textAlign: 'left' }}>Nombre</label>
+                        <input type="text" id="nombre" style={{ width: '85%' }} />
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                        <label htmlFor="apellido" style={{ textAlign: 'left' }}>Apellido</label>
+                        <input type="text" id="apellido" style={{ width: '85%' }} />
+                    </div>
                 </div>
-                <div className="mb-4 w-full flex flex-col">
-                    <label className="text-sm font-medium text-gray-700">Apellido</label>
-                    <input type="text" className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+                <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column' }}>
+                    <label htmlFor="email" style={{ textAlign: 'left' }}>Email</label>
+                    <input type="text" id="email" style={{ width: '93%' }} />
                 </div>
-                <div className="mb-4 w-full flex flex-col">
-                    <label className="text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+                <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column' }}>
+                    <label htmlFor="telefono" style={{ textAlign: 'left' }}>Teléfono</label>
+                    <input type="text" id="telefono" style={{ width: '93%' }} />
                 </div>
-                <div className="mb-4 w-full flex flex-col">
-                    <label className="text-sm font-medium text-gray-700">Teléfono</label>
-                    <input type="tel" className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+                <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column' }}>
+                    <label htmlFor="contraseña" style={{ textAlign: 'left' }}>Contraseña</label>
+                    <input type="password" id="contraseña" style={{ width: '93%' }} />
                 </div>
-                <div className="mb-4 w-full flex flex-col">
-                    <label className="text-sm font-medium text-gray-700">Contraseña</label>
-                    <input type="password" className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+                <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column' }}>
+                    <label htmlFor="confirmar" style={{ textAlign: 'left' }}>Confirmar Contraseña</label>
+                    <input type="password" id="confirmar" style={{ width: '93%' }} />
                 </div>
-                <div className="mb-6 w-full flex flex-col">
-                    <label className="text-sm font-medium text-gray-700">Confirmar Contraseña</label>
-                    <input type="password" className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" />
-                </div>
-                <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                <button type="submit" style={{ marginTop: '10px', width: '98%', padding: '10px', backgroundColor: 'black', color: 'white', border: 'none', borderRadius: '5px' }}>
                     Registrarse
                 </button>
             </form>
         </div>
-
     );
 };
 
